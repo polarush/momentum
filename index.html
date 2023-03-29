@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+  />
+  <title>Momentum - Polarush</title>
+</head>
+<body>
+  <div class="container">
+    <ul class="">
+      <li id="box">Ссылки  <i class="fas fa-link"></i>
+          <ul class="">
+            <li class="dropdown-item"><a href="https://rs.school/">RS School</a></li>
+            <li class="dropdown-item"><a href="https://github.com/polarush">Github</a></li>
+          </ul>
+      </li>
+  </ul>
+  </div>
+   <header class="header">
+    <div class="player">
+      <div class="audio-player">
+       
+
+      <div class="music-container" id="music-container">
+        <div class="music-info">
+          <h4 id="title"></h4>
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+        <audio src="assets/sounds/Aqua Caelestis.mp3" id="audio"></audio>
+        
+      </div>
+
+
+        <div class="player-controls">
+          <button id="prev" class="play-prev player-icon"></button> <!-- action-btn  -->
+          <button id="play" class="play player-icon"></button> <!-- action-btn-big -->
+          <button id="next" class="play-next  player-icon"></button> <!-- action-btn -->
+        </div>
+        
+        
+      </div>
+      <ul class="play-list">
+        <button class="play-item" onclick="setIndex(0)">Aqua Caelestis</button>
+        <button class="play-item" onclick="setIndex(1)">Ennio Morricone</button>
+        <button class="play-item" onclick="setIndex(2)">River Flows In You</button>
+        <button class="play-item" onclick="setIndex(3)">Summer Wind</button>
+      </ul>
+   
+    </div>
+
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon" onclick="getSlidePrev()"></button>
+      <button class="slide-next slider-icon" onclick="getSlideNext()"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[введите имя]"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote" onclick="displayQuote()"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="copyright">
+        <div class="course">
+            <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/momentum/momentum-stage1.md" class="copy">Rolling Scopes School</a>
+        </div>
+        <div class="year">
+            © 2021
+        </div>
+        <div class="author-name">
+            <a href="https://github.com/polarush" class="copy">Polarush</a>
+        </div>
+    </div>
+  </footer>
+  <script src="libs/calendar.js"></script>
+  <script src="libs/quote.js"></script>
+  <script src="libs/slider.js"></script>
+  <script src="libs/weather.js"></script>
+  <script src="libs/player.js"></script>
+  <script src="libs/todolist.js"></script>
+
+</body>
+</html>
